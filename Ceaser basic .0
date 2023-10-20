@@ -1,0 +1,31 @@
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+		String engAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		
+		// Encrypt the letter 'c' using the Caesar Cipher and a key of 3
+		
+		int plaintextNum = 0;
+		char plaintext = 'C';
+		
+		
+		int key = 3;
+		
+		int ciphertextNum = 0;
+		char ciphertextChar;
+		
+		//1. Numerical equivalent of the char 'c'
+		plaintextNum = engAlphabet.indexOf(plaintext);
+		
+		//2. Add the key value to plaintextNum
+		ciphertextNum = plaintextNum+3;
+		
+		//3. Map ciphertextNum to a character in the alphabet
+		ciphertextChar = engAlphabet.charAt(ciphertextNum);
+		
+		// 4. Display Ciphertext
+		System.out.println(ciphertextChar);
+	}
+
+}
